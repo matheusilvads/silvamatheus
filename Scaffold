@@ -1,0 +1,39 @@
+package com.qi.finalproject.composables
+
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Settings
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+
+@Composable
+fun MyBottomBar(
+    modifier: Modifier = Modifier
+) {
+    NavigationBar(
+    content = {
+        TextButton(
+            onClick =  { },
+            content ={ Text(text = "Donate") }
+        )
+        IconButton(
+            onClick = {  },
+            content = {
+                Icon(
+                    imageVector = Icons.Rounded.Settings,
+                    contentDescription = "Configurações")
+                )
+            }
+        )
+        }
+            }
+        }
+    }
+
+///////////////////////////
+@Preview
+@Composable
+fun BottomBarPreview() {
+    MyBottomBar()
+}
